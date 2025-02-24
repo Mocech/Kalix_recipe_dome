@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Detail - Cook.</title>
+    <link rel="stylesheet" href="Assests/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as other pages -->
+    </header>
+
+    <main>
+        <div class="container">
+            <article class="recipe-detail">
+                <h1 id="recipe-title">Fried eggs</h1>
+                <div class="recipe-meta">
+                    <span id="recipe-category">Category</span>
+                    <span id="recipe-time">Cooking Time</span>
+                    <span id="recipe-difficulty">Difficulty</span>
+                </div>
+                <div class="recipe-rating" id="recipe-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-value">4.5</span>
+                    <span class="rating-count">(123 ratings)</span>
+                </div>
+                <img  src="Assests/images/freid_eggs.jpeg" alt="Recipe Name">
+                <p id="recipe-description">A protein that richly builds the body.</p>
+                <div class="recipe-ingredients">
+                    <h2>Ingredients</h2>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated by JavaScript -->
+                    </ul>
+                </div>
+                <div class="recipe-instructions">
+                    <h2>Instructions</h2>
+                    <ol id="instructions-list">
+                        <!-- Instructions will be populated by JavaScript -->
+                    </ol>
+                </div>
+                <div class="user-rating">
+                    <h3>Rate this recipe</h3>
+                    <div class="star-rating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <button id="submit-rating" class="btn btn-primary">Submit Rating</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="Assests/js/script.js"></script>
+</body>
+</html>
+
