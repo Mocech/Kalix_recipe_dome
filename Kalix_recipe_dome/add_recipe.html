@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe - Cook.</title>
+    <link rel="stylesheet" href="Assests/css/styles.css">
+    <link rel="stylesheet" href="Assests/css/profile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cook<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="profile.html" class="btn btn-secondary">My Profile</a>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="add-recipe">
+                <h1>Add New Recipe</h1>
+                <form id="add-recipe-form" class="recipe-form">
+                    <div class="recipe-image-upload">
+                        <img src="Assests/images/Recipe_Preview.jpeg" alt="Recipe Preview" id="recipe-preview">
+                        <div class="upload-controls">
+                            <label for="recipe-image" class="btn btn-secondary">Upload Image</label>
+                            <input type="file" id="recipe-image" accept="image/*" hidden>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipe-title">Recipe Title</label>
+                        <input type="text" id="recipe-title" name="title" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="recipe-category">Category</label>
+                            <select id="recipe-category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="main">Main Course</option>
+                                <option value="appetizer">Appetizer</option>
+                                <option value="dessert">Dessert</option>
+                                <option value="beverage">Beverage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipe-time">Cooking Time (minutes)</label>
+                            <input type="number" id="recipe-time" name="time" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipe-difficulty">Difficulty</label>
+                            <select id="recipe-difficulty" name="difficulty" required>
+                                <option value="">Select Difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipe-description">Description</label>
+                        <textarea id="recipe-description" name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <div id="ingredients-container">
+                            <div class="ingredient-row">
+                                <input type="text" name="ingredients[]" placeholder="Enter ingredient" required>
+                                <button type="button" class="btn btn-secondary remove-ingredient">Remove</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="add-ingredient">Add Ingredient</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Instructions</label>
+                        <div id="instructions-container">
+                            <div class="instruction-row">
+                                <textarea name="instructions[]" placeholder="Enter instruction step" required></textarea>
+                                <button type="button" class="btn btn-secondary remove-instruction">Remove</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="add-instruction">Add Instruction</button>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Recipe</button>
+                        <a href="profile.html" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Cook. is your go-to source for delicious recipes and cooking inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">PT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assests/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Cook.</title>
+    <link rel="stylesheet" href="Assests/css/styles.css">
+    <link rel="stylesheet" href="Assests/css/profile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cook<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="profile.html" class="btn btn-secondary">My Profile</a>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="edit-profile">
+                <h1>Edit Profile</h1>
+                <form id="edit-profile-form" class="profile-form">
+                    <div class="profile-picture-upload">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20(31)-3pDvjnLO8UrdoDbxuLlmYVfYJzOPdq.png" alt="Current Profile Picture" id="profile-preview">
+                        <div class="upload-controls">
+                            <label for="profile-picture" class="btn btn-secondary">Change Picture</label>
+                            <input type="file" id="profile-picture" accept="image/*" hidden>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" value="Moses Francis" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="mosesfrancis018@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio" rows="4">I'm a passionate home cook who loves experimenting with new recipes and flavors.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" value="Nairobi, Kenya">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <a href="profile.html" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Cook. is your go-to source for delicious recipes and cooking inspiration.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">PT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assests/js/script.js"></script>
+</body>
+</html>
+

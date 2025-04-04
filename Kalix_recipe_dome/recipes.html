@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Cook.</title>
+    <link rel="stylesheet" href="Assests/css/styles.css">
+    <link rel="stylesheet" href="Assests/css/recipe.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cook<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="profile.html" class="btn btn-secondary">My Profile</a>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Recipe Collection</h1>
+            <p>Explore our diverse collection of recipes from around the world. From traditional dishes to modern cuisine, find your next favorite meal here.</p>
+
+            <div class="recipe-search">
+                <input type="text" id="recipe-search" placeholder="Search recipes...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="main">Main Course</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="appetizer">Appetizer</option>
+                </select>
+                <select id="difficulty-filter">
+                    <option value="">All Levels</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <img src="Assests/images/dish1.jpeg" alt="Homemade Margherita Pizza">
+                    <h3>Homemade Margherita Pizza</h3>
+                    <p>A classic Italian pizza with a crispy crust, fresh tomatoes, mozzarella, and basil.</p>
+                    <div class="recipe-meta">
+                        <span>Main Course</span>
+                        <span>35 mins</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <span>4.7</span>
+                        <span>★★★★★</span>
+                    </div>
+                    <a href="recipe-detail.html?id=1" class="btn btn-secondary">View Recipe</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="Assests/images/dish2.jpeg" alt="Sadza neMatemba">
+                    <h3>Sadza neMatemba</h3>
+                    <p>A traditional African dish featuring sadza (cornmeal porridge) served with matemba (dried fish relish).</p>
+                    <div class="recipe-meta">
+                        <span>Main Course</span>
+                        <span>45 mins</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <span>4.5</span>
+                        <span>★★★★☆</span>
+                    </div>
+                    <a href="recipe-detail.html?id=2" class="btn btn-secondary">View Recipe</a>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="Assests/images/freid_eggs.jpeg" alt="Sadza neMatemba">
+                    <h3>Fried Eggs</h3>
+                    <p>A protein that richly builds the body.</p>
+                    <div class="recipe-meta">
+                        <span>Main Course</span>
+                        <span>20 mins</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="recipe-rating">
+                        <span>4.0</span>
+                        <span>★★★★☆</span>
+                    </div>
+                    <a href="recipe-detail.html?id=2" class="btn btn-secondary">View Recipe</a>
+                </div>
+            </div>
+
+            <button id="load-more" class="btn btn-secondary">Load More Recipes</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cook. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
